@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+.todo-container {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: skyblue;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-task {
+  margin-bottom: 20px;
+  display: flex; /* Use flexbox to align items */
+}
+
+.add-task input[type="text"] {
+  flex: 1; /* Grow to take remaining space */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-task button {
+  padding: 10px 20px; /* Adjust padding for button */
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Add margin to separate input and button */
+}
+
+.add-task button:hover {
+  background-color: #0056b3;
+}
+
+#task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#task-list li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  .todo-container {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
+.delete-button {
+  padding: 8px 16px; /* Adjust padding as needed */
+  font-size: 14px; /* Adjust font size as needed */
+  background-color: #dc3545; /* Button color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; /* Add margin between task name and delete button */
+}
+
+.delete-button:hover {
+  background-color: #bd2130; /* Darker color on hover */
+}
+body{
+  background-color: rgb(26, 206, 26);
+}
